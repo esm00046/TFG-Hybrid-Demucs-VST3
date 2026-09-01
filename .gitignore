@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+venv/
+
+# Xcode / JUCE
+DerivedData/
+*.xcuserdata/
+*.xcuserstate
+Builds/MacOSX/build/
+build/
+
+# Logs
+*.log
+
+# REAPER temporary files
+*.reapeaks
+*.autosave

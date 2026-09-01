@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="kDX0Xv" name="test_offline_demucs_cpp" projectType="consoleapp"
+              useAppConfig="0" addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="kJLn5z" name="test_offline_demucs_cpp">
+    <GROUP id="{92D1D5C3-9853-A756-67DA-B30F2E222AD6}" name="Source">
+      <FILE id="lkO64n" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraCompilerFlags="-fno-modules  -mmacosx-version-min=11.0"
+               extraLinkerFlags="-Wl,-rpath,/Users/enriique/Desktop/TFG/libtorch/lib -mmacosx-version-min=11.0"
+               externalLibraries="torch&#10;torch_cpu&#10;c10" enableGNUExtensions="1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="test_offline_demucs_cpp"
+                       headerPath="/Users/enriique/Desktop/TFG/libtorch/include&#10;/Users/enriique/Desktop/TFG/libtorch/include/torch/csrc/api/include"
+                       libraryPath="/Users/enriique/Desktop/TFG/libtorch/lib" extraCompilerFlags="-fno-modules  -mmacosx-version-min=11.0"
+                       extraLinkerFlags="-Wl,-rpath,/Users/enriique/Desktop/TFG/libtorch/lib -mmacosx-version-min=11.0"
+                       macOSDeploymentTarget="11" osxCompatibility="11 SDK"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="test_offline_demucs_cpp"
+                       headerPath="/Users/enriique/Desktop/TFG/libtorch/include&#10;/Users/enriique/Desktop/TFG/libtorch/include/torch/csrc/api/include"
+                       libraryPath="/Users/enriique/Desktop/TFG/libtorch/lib" extraCompilerFlags="-fno-modules  -mmacosx-version-min=11.0"
+                       extraLinkerFlags="-Wl,-rpath,/Users/enriique/Desktop/TFG/libtorch/lib -mmacosx-version-min=11.0"
+                       macOSDeploymentTarget="11" osxCompatibility="11 SDK"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Documents/JUCE_8/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>

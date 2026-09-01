@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="kpbtx2" name="Demucs12" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+  <MAINGROUP id="KTtqSX" name="Demucs12">
+    <GROUP id="{BE3E05DC-9046-C08F-72CC-4FB07258FE5D}" name="Source">
+      <FILE id="OUYGeL" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="L9xlli" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="Br5FSL" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="OYVj57" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors_headless" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" extraCompilerFlags="-fno-modules  -mmacosx-version-min=11.0"
+               extraLinkerFlags="-Wl,-rpath,/Users/enriique/Desktop/TFG/libtorch/lib -mmacosx-version-min=11.0"
+               externalLibraries="torch&#10;torch_cpu&#10;c10" enableGNUExtensions="1">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Demucs12" headerPath="/Users/enriique/Desktop/TFG/libtorch/include&#10;/Users/enriique/Desktop/TFG/libtorch/include/torch/csrc/api/include"
+                       libraryPath="/Users/enriique/Desktop/TFG/libtorch/lib" extraCompilerFlags="-fno-modules  -mmacosx-version-min=11.0"
+                       extraLinkerFlags="-Wl,-rpath,/Users/enriique/Desktop/TFG/libtorch/lib -mmacosx-version-min=11.0"
+                       macOSDeploymentTarget="11" osxCompatibility="11 SDK"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Demucs12" headerPath="/Users/enriique/Desktop/TFG/libtorch/include&#10;/Users/enriique/Desktop/TFG/libtorch/include/torch/csrc/api/include"
+                       libraryPath="/Users/enriique/Desktop/TFG/libtorch/lib" extraCompilerFlags="-fno-modules  -mmacosx-version-min=11.0"
+                       extraLinkerFlags="-Wl,-rpath,/Users/enriique/Desktop/TFG/libtorch/lib -mmacosx-version-min=11.0"
+                       macOSDeploymentTarget="11" osxCompatibility="11 SDK"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_audio_processors_headless" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../Documents/JUCE_8/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../Documents/JUCE_8/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
